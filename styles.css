@@ -1,7 +1,8 @@
-/* To set a text to the right
+/* 
+TO SET A TEXT TO THE RIGHT 
 [text-align: right;]
 
-To set a text to the center
+TO SET A TEXT TO THE CENTER
 [text-align: center;]
 */
 
@@ -12,21 +13,23 @@ h1 {
 
 .marker {
     /* background-color: red; */
+    /* margin: auto; */
 
-    /* To an element get the color it
-    has to have a width and height firstly*/
+    /* 
+    TO GET A COLOR ON A ELEMENT, FIRSTLY SET A WIDTH AND HEIGHT
+    */
     width: 200px;
     height: 25px;
 
-    /* To center an elemento using margin
-    we set it with "auto", in that way 
-    margin top, bottom, right and left get
-    the same value */
-    
-    /* margin: auto; */
+    /* 
+    TO CENTER A ELEMENT USING MARGIN
+    [margin: auto]
+    MARGIN TOP, BOTTOM, RIGHT AND LEFT GET THE SAME VALUE
+    */
 
-    /* To use diffrent values horizontal
-    and vertical */
+    /* 
+    TO SET DIFFERENT VALUES HORIZONTAL AND VERTICAL
+     */
     margin: 10px auto;
 
 }
@@ -35,15 +38,23 @@ h1 {
     /* background-color: red; */
     /* background-color: rgb(255, 0,0); */
 
-    /* To make secondary color we mix primary colors */
+    /* TO MAKE SECONDARY COLORS, MIX PRIMARY COLORS */
     /* background-color: rgb(255, 255, 0); */
 
-    /* To create tertiary colors we mix primary color and secondary color */
+    /* TO MAKE TERTIARY COLORS, MIX PRIMARY COLORS AND SECONDARY COLORS */
     /* background-color: rgb(255, 127, 0); */
     /* background-color: rgb(127, 255, 0); */
     /* background-color:  rgb(255, 0, 0);  */
     /* background:rgb(255, 0, 0);  */
-    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+    /* background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255)); */
+    
+    /* 
+    TO TRANSITION FROM ONE COLOR TO OTHER AT CERTAIN POINT, USE PERCENTAGE
+    EX: TO START THE GRADIENT AT 75% OF THE WHOLE ELEMENT. THE FIRST COLOR WILL TAKE A 75% OF THE SPACE.
+    */
+    /* background: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255));  */
+    /* background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%);  */
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27)); 
 }
 
 .green {
@@ -54,7 +65,11 @@ h1 {
     /* background-color: rgb(0, 127, 255); */
 
     /* SET HEXADECIMAL COLORS */
-    background-color: #00FF00;
+    /* background-color: #00FF00; */
+    /* background: linear-gradient(180deg, #55680D, #71f53e, #116c31); */
+    background: linear-gradient(#55680D, #71f53e, #116c31);
+
+
 }
 
 .blue {
@@ -72,17 +87,23 @@ h1 {
 }
 
 
-/* Two colors that are opposite from each other on the color wheel
-are called [complementary colors]. If two complementary colors 
-are combined, they produce gray. But when they are placed side-by-side, these colors
-produce strong visual constrast and appear brighter
+/* 
+Two colors that are opposite from each other on the color wheel
+are called [complementary colors]. 
 
-It's better practice to choose one color as the dominant color, and use it's complementary 
-color as an accent to bring attention to certain content on the page */
+If two complementary colors are combined, they produce gray. But when 
+they are placed side-by-side, these colors produce strong visual 
+constrast and appear brighter.
+
+It's better practice to choose one color as the dominant color, and use 
+it's complementary color as an accent to bring attention to certain 
+content on the page. 
+*/
 
 
 
-/* Decimal goes from 0-9. Hexadecimal, or base 16 values 
+/* 
+Decimal goes from 0-9. Hexadecimal, or base 16 values 
 go from 0-9, and A-F
 
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
@@ -93,7 +114,8 @@ the same as rgbb(0, 255, 0)
 */
 
 
-/* The HSL color model, or hue, saturation and lightness is 
+/* 
+The HSL color model, or hue, saturation and lightness is 
 another way to represent colors.
 
 The CSS [hsl] function accepts 3 values: a number from 0 to 360 for
@@ -111,8 +133,9 @@ black, to 100%, complete white, with 50% being neutral.
 */
 
 
-/* A gradient helps us to make color transitions
-The CSS [linear-gradient] function lets you control the direction of the transition along 
+/* 
+A gradient helps us to make color transitions. The CSS [linear-gradient] 
+function lets you control the direction of the transition along 
 a line, and which colors are used.
 
 A gradient is when one color transitions into another.
@@ -123,4 +146,7 @@ value
 
 The linear-gradiente syntax:
 linear-gradient(gradientDirection, color1, color2);
+
+If no [gradientDirection] argument is provided to the linear-gradient  function, 
+it arranges colors from top to bottom, or along a 180 degree line, by default
 */
