@@ -78,6 +78,7 @@ h1 {
     /* background-color: rgb(255, 0, 255); */
     /* background-color: rgb(255, 0, 127); */
     background-color: hsl(240, 100%, 50%);
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
 }
 
 .container {
