@@ -55,6 +55,10 @@ h1 {
     /* background: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255));  */
     /* background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%);  */
     background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27)); 
+
+    box-shadow: 5px 5px red;
+    /* box-shadow: -5px -5px red; */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
 }
 
 .green {
@@ -68,7 +72,8 @@ h1 {
     /* background-color: #00FF00; */
     /* background: linear-gradient(180deg, #55680D, #71f53e, #116c31); */
     background: linear-gradient(#55680D, #71f53e, #116c31);
-
+    /* box-shadow: 5px 5px 5px green; */
+    box-shadow: 0 0 20px 0 #3b7e20cc;
 
 }
 
@@ -79,6 +84,8 @@ h1 {
     /* background-color: rgb(255, 0, 127); */
     background-color: hsl(240, 100%, 50%);
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    /* box-shadow: 0 0 20px 0 blue; */
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
 }
 
 .container {
@@ -150,4 +157,83 @@ linear-gradient(gradientDirection, color1, color2);
 
 If no [gradientDirection] argument is provided to the linear-gradient  function, 
 it arranges colors from top to bottom, or along a 180 degree line, by default
+*/
+
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    /* background-color: white; */
+
+    /* 
+    TO CONTROL OPACITY 
+    0% Fully transparent
+    1% Fully opaque
+    */
+    /* opacity: 0.5; */
+
+    /* 
+    IT'S POSSIBLE TO SET OPACITY WITH ALPHA CHANNELS TOO 
+    USE:
+    rgba(redValue, greenValue, blueValue, alphaValue)
+    */
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.cap, .sleeve {
+    /* DIV'S DISPLAY IS BLOCK, SO IT HAS TO BE CHANGED*/
+    display: inline-block;
+
+    /*
+    TO SET BORDER
+    [border-color]
+     */
+
+    border-left-width: 10px;
+
+    /* 
+    BORDER STYLE
+    [border-left-style: solid, dotted, dashed]
+    */
+    border-left-style: solid;
+
+    /* 
+    BORDER COLOR
+    */
+    border-left-color: black;
+
+    /* 
+    BORDER'S WIDTH, STYLE AND COLOR AT THE SAME TIME
+    [border-left: width style color]
+    */
+    /* border-left: 10px solid black; */
+
+    /* TO DOUBLE LINE */
+    /* border-left: 10px double black; */
+
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+/* 
+TO ADD SHADOWS TO THE ELEMENTS TO THE RIGHT SIDE
+[box-shadow: offsetX offsetY color]
+
+TO ADD SHADOWS TO THE ELEMENTS TO THE OPPOSITE SIDE
+[box-shadow: -offsetX -offsetY color]
+*/
+
+/* 
+BLURRADIUS
+EDGES OF THE SHADOWS ARE SHARP
+[box-shadow: -offsetX -offsetY blurRadius color]
+*/
+
+/* 
+SPREADRADIUS TO EXPAND THE SHADOW FURTHER
+[box-shadow: -offsetX -offsetY blurRadius spreadRadius color]
 */
